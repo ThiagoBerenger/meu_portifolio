@@ -1,0 +1,60 @@
+.skill-container {
+    background-image: linear-gradient(var(--purple_2), var(--dark-blue));
+    padding: 4rem 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill-container h1 {
+    color: var(--blue);
+    font-size: 42px;
+    margin-bottom: 4rem;
+    font-weight: 200;
+}
+
+.techs-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4rem;
+    width: 100%;
+}
+
+.tech-item {
+    box-shadow: rgb(50, 33, 95) 3px 3px 6px 0px inset, rgba(71, 64, 163, 0.5) -3px -3px 6px 1px inset;
+    padding: 1rem;
+    transition: 2 ease;
+    margin-bottom: 8rem;
+}
+
+.tech-item svg{
+    font-size: 72px;
+    color: var(--blue);
+}
+
+@media screen and (max-width: 900px) {
+    .skill-container {
+        padding: 2rem 0rem;
+    }
+    
+    .skill-container h1 {
+        font-size: 32px;
+        margin-bottom: 2rem;
+    }
+    
+    .techs-container {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    
+    .tech-item {
+        margin-bottom: 1rem;
+    }
+    
+    .tech-item svg{
+        font-size: 42px;
+    }
+}
+
+

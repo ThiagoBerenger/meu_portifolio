@@ -1,0 +1,135 @@
+.hero-section {
+    display: flex;
+    padding: 8rem 0;
+    background-image: linear-gradient(var(--purple_2), var(--dark-blue));
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    box-shadow: 2px 1px 30px 10px rgba(0, 0, 0, 0.425);
+}
+
+.hero-section_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 26%;
+    color: var(--light-blue);
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.507);
+}
+
+.hero-section_text p {
+    width: 80%;
+    color: var(--light-blue);
+}
+
+.hero-section_icons svg{
+    font-size: 32px;
+    margin: .4rem 1rem 0 0;
+    color: var(--blue);
+    transition: .4s ease;
+}
+
+.hero-section_icons svg:hover {
+    transform: translateY(-8px);
+}
+
+.hero-section_image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 1s ease all;
+}
+
+.hero-section_image img {
+    width: 500px;    
+}
+
+.tech-container {
+    background-color: var(--blue);
+    padding: .4rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 1rem 1rem 1rem;
+    box-shadow: 1px 10px 12px 4px rgba(0, 0, 0, 0.404);
+}
+
+.tech-container svg {
+    font-size: 42px;
+    color: var(--dark-blue);
+}
+
+.about-container {
+    background-color: var(--dark-blue);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 4rem 12rem;
+}
+
+.about-container_box {
+    display: flex;
+    justify-content: center;
+    padding: 4rem;
+    border-radius: 2rem 0rem 2rem 2rem;    
+    box-shadow: 1px 10px 12px 4px rgba(0, 0, 0, 0.404);
+    background-color: var(--purple_2);
+    gap: 4rem;
+}
+
+.about-container_box img {
+    width: 200px;
+    height: 200px !important;
+    height: auto;
+    border-radius: 20% 0% 20% 20%;
+    box-shadow: 1px 10px 12px 4px rgba(0, 0, 0, 0.301);
+}
+
+.about-container_text {
+    color: var(--blue);
+    width: 40%;
+}
+
+@media screen and (max-width: 900px) {
+    .hero-section {
+        flex-direction: column-reverse;
+        padding: 4rem 0 2rem 0;
+        gap: 4rem;
+    }
+    
+    .hero-section_text {
+        width: 90%;
+    }
+    
+    .hero-section_text p {
+        width: 90%;
+    }
+    
+    .hero-section_image img {
+        width: 300px;    
+    }
+    
+    .tech-container {
+        gap: .8rem;
+    }
+    
+    .tech-container svg {
+        font-size: 32px;
+    }
+    
+    .about-container {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    
+    .about-container_box {
+        flex-direction: column;
+        padding: 2rem;
+        gap: 2rem;
+    }
+    
+    .about-container_text {
+        width: 90%;
+    }
+}

@@ -18,8 +18,13 @@
 }
 
 .hero-section_text p {
-    width: 80%;
     color: var(--light-blue);
+}
+
+.hero-section_icons {
+    padding-top: .4rem;
+    align-items: center;
+    display: flex;
 }
 
 .hero-section_icons svg{
@@ -30,6 +35,25 @@
 }
 
 .hero-section_icons svg:hover {
+    transform: translateY(-8px);
+}
+
+.buttonDownload {
+    color: var(--dark-blue);
+    font-weight: 800;
+    align-items: center;
+    margin-top: .4rem;
+    padding: .3rem 1rem;
+    border: none;
+    background-color: var(--blue);
+    transition: .4s ease;
+    border-radius: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    text-shadow: none;
+}
+
+.buttonDownload:hover {
     transform: translateY(-8px);
 }
 
@@ -96,10 +120,12 @@
         flex-direction: column-reverse;
         padding: 4rem 0 2rem 0;
         gap: 4rem;
+        text-align: center;
     }
     
     .hero-section_text {
         width: 90%;
+        align-items: center;
     }
     
     .hero-section_text p {

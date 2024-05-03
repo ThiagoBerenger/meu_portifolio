@@ -15,8 +15,11 @@ import { SiXdadevelopers } from "react-icons/si";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 
+
 import fotoGit from '../../assets/fotoGit.jpg'
 import devImage from '../../assets/devImage.svg'
+
+import curriculum from '../../assets/cvThiagoBerenger.pdf'
 
 const HeroSection = () => {
   return (
@@ -33,6 +36,11 @@ const HeroSection = () => {
               <a href="https://www.linkedin.com/in/thiago-berenger/" target='blank'>
                 <FaLinkedin />
               </a>
+              
+                <a className='buttonDownload' href={curriculum} download='cvThiagoBerenger.pdf'>
+                   Download CV
+                </a>
+              
             </div>
           </div>
           <div className="hero-section_image">

@@ -1,41 +1,25 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import App from './App.jsx';
+import './index.css';
 
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-
-import Home from './Routes/Home.jsx'
-import Contact from './Routes/Contact.jsx'
-import Skills from './Routes/Skills.jsx'
-import Projects from './Routes/Projects.jsx'
-
-const router = createBrowserRouter([
-  {
-    element: <App />,
-    children: [
-      {
-        path: '/',
-        element: <Home />
-      },
-      {
-        path: '/contato',
-        element: <Contact />
-      },
-      {
-        path: '/habilidades',
-        element: <Skills />
-      },
-      {
-        path: '/projetos',
-        element: <Projects />
-      },
-    ]
-  }
-])
+import Home from './Routes/Home.jsx';
+import Contact from './Routes/Contact.jsx';
+import Skills from './Routes/Skills.jsx';
+import Projects from './Routes/Projects.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router = {router} />
+    <Router>
+      <Routes>
+        <Route path="/" element={<App />}>
+          <Route index element={<Home />} />
+          <Route path="/contato" element={<Contact />} />
+          <Route path="/habilidades" element={<Skills />} />
+          <Route path="/projetos" element={<Projects />} />
+        </Route>
+      </Routes>
+    </Router>
   </React.StrictMode>,
-)
+);

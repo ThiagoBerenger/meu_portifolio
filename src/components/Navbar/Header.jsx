@@ -42,7 +42,7 @@ const Header = () => {
       <div className={`hidden-navbar ${isMenuOpen ? 'active' : ''}`} ref={navRef}>
           <div className="navbar_dropdown-link"><Link to='/' onClick={closeNavbar}>Home</Link></div>
           <div className="navbar_dropdown-link"><Link to="/habilidades" onClick={closeNavbar}>Habilidades</Link></div>
-          <div className="navbar_dropdown-link"><Link to="#projetos" onClick={closeNavbar}>Projetos</Link></div>
+          <div className="navbar_dropdown-link"><Link to="/projetos" onClick={closeNavbar}>Projetos</Link></div>
           <div className="navbar_dropdown-link"><Link to="/contato" onClick={closeNavbar}>Contato</Link></div>
       </div>
     </>

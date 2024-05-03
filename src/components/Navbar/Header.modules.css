@@ -1,6 +1,10 @@
 .navbar {
     height: 8rem;
     background-color: var(--purple_2);
+    /* position: fixed !important;
+    z-index: 99;
+    width: 100%;
+    box-shadow: 2px 1px 30px 10px rgba(0, 0, 0, 0.425); */
 }
 
 .nav-bars {

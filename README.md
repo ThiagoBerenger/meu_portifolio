@@ -1,6 +1,6 @@
 # Portifólio
 
-Clique no link para acessar: https://portifolio-h2kp8dd29-thiagos-projects-4fff79e9.vercel.app/
+Clique no link para acessar: https://thiago-berenger.onrender.com/
 
 #### Realizado com: 
 - React JS

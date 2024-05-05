@@ -31,10 +31,10 @@ const Header = () => {
             <FaConnectdevelop />
           </Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link to="/">Home</Nav.Link>
-            <Nav.Link to="/habilidades">Habilidades</Nav.Link>
-            <Nav.Link to="/projetos">Projetos</Nav.Link>
-            <Nav.Link to="/contato">Contato</Nav.Link>
+            <Nav.Link as={Link} to="/">Home</Nav.Link>
+            <Nav.Link as={Link} to="/habilidades">Habilidades</Nav.Link>
+            <Nav.Link as={Link} to="/projetos">Projetos</Nav.Link>
+            <Nav.Link as={Link} to="/contato">Contato</Nav.Link>
           </Nav>
             <button className="hamburger" onClick={toggleNavbar}></button>
         </Container>

@@ -15,3 +15,12 @@
   --purple: #553DF2;
   --purple_2: #4703A6;
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-image: linear-gradient(var(--purple), var(--purple_2));
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--black);
+}
